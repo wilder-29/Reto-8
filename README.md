@@ -71,6 +71,12 @@ Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa 
                 t_iter = medir_tiempo(fibo_iterativo, n)
                 t_recur = medir_tiempo(fibo_recursivo, n)
                 print(f"{n}   {t_iter:}   {t_recur:}")
+
+
+   ![image](https://github.com/user-attachments/assets/c4f2a2a6-9fe5-4be7-b352-374dc530514c)
+
+   
+
    
 
 
