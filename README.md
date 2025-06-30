@@ -30,7 +30,7 @@ Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa 
            return min(args)
        print("Mínimo entre 6, 2, 8:", minimo(6, 2, 8))
 
-   3. Escriba una función recursiva para calcular la operación de la potencia.
+3. Escriba una función recursiva para calcular la operación de la potencia.
   
           def potencia_recursiva(base: int, exponente: int) -> int:
       
