@@ -33,10 +33,10 @@ Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa 
    3. Escriba una función recursiva para calcular la operación de la potencia.
   
           def potencia_recursiva(base: int, exponente: int) -> int:
-              # Caso base
+      
               if exponente == 0:
                   return 1
-              # Llamada recursiva
+             
               return base * potencia_recursiva(base, exponente - 1)
 
           if __name__ == "__main__":
