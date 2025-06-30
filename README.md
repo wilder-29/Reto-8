@@ -47,30 +47,30 @@ Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa 
 
 4. Utilice la siguiente plantilla de code para contar el tiempo:
      
-import time
-def fibo_iterativo(n: int) -> int:
-    n1, n2 = 0, 1
-    for _ in range(n):
-        n1, n2 = n2, n1 + n2
-        return n1
+        import time
+        def fibo_iterativo(n: int) -> int:
+            n1, n2 = 0, 1
+            for _ in range(n):
+                n1, n2 = n2, n1 + n2
+                return n1
 
-def fibo_recursivo(n: int) -> int:
-     if n <= 1:
-        return n
-        return fibo_recursivo(n - 1) + fibo_recursivo(n - 2)
+        def fibo_recursivo(n: int) -> int:
+             if n <= 1:
+                return n
+                return fibo_recursivo(n - 1) + fibo_recursivo(n - 2)
 
-def medir_tiempo(funcion, n: int) -> float:
-     start_time = time.time()
-     funcion(n)
-     end_time = time.time()
-     return end_time - start_time
+        def medir_tiempo(funcion, n: int) -> float:
+             start_time = time.time()
+             funcion(n)
+             end_time = time.time()
+             return end_time - start_time
 
-if __name__ == "__main__":
-    print("n\tIterativo (s) Recursivo (s)")
-    for n in range(5, 40, 5):  # de 5 a 35
-        t_iter = medir_tiempo(fibo_iterativo, n)
-        t_recur = medir_tiempo(fibo_recursivo, n)
-        print(f"{n}   {t_iter:}   {t_recur:}")
+        if __name__ == "__main__":
+            print("n\tIterativo (s) Recursivo (s)")
+            for n in range(5, 40, 5):  # de 5 a 35
+                t_iter = medir_tiempo(fibo_iterativo, n)
+                t_recur = medir_tiempo(fibo_recursivo, n)
+                print(f"{n}   {t_iter:}   {t_recur:}")
    
 
 
